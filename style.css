@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:arial;
+    text-decoration-color: aqua;
+
+}
+body{
+    background-color: black;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    background: transparent;
+}
+.logo{
+    font-size:25px;
+    color:white;
+}
+
+.navbar a{
+    color:white;
+    font-size:18px;
+    font-weight :500;
+    text-decoration: none;
+    transition: .7s;
+}
+.navbar a:hover,a:active{
+    color:rgb(255, 0, 34);
+}
+
+.fab.fa-facebook-square {
+    color: #3b5998; 
+    font-size: 24px;
+  }
+  
+
+.social-icons {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+}
+
+.social-icons a {
+    color: white; 
+    font-size: 24px; 
+    margin-right: 10px; 
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:red; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: red; 
+}
