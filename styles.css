@@ -35,7 +35,7 @@ body {
     font-weight: 500;
     text-decoration: none;
     transition: 0.7s;
-    margin: 30px;
+    margin: 0 10px;
     padding: 10px;
 }
 
@@ -89,19 +89,17 @@ body {
     align-items: center;
     color: white;
     padding: 70px 10% 0;
-    flex-wrap: wrap; /* Added for responsiveness */
+    flex-direction: row; /* Row by default */
 }
 
 .home-content {
     max-width: 600px;
-    flex: 1 1 100%; /* Adjusted for responsiveness */
-    text-align: center; /* Center aligned for smaller screens */
 }
 
 .home-content h1 {
     font-size: 50px;
     font-weight: 700;
-    margin: -3px 0;
+    margin: 20px 0;
 }
 
 .home-content h3 {
@@ -124,12 +122,10 @@ body {
 
 .home-img {
     max-width: 450px;
-    flex: 1 1 100%; /* Adjusted for responsiveness */
-    text-align: center; /* Center aligned for smaller screens */
 }
 
 .home-img img {
-    max-width: 100%; /* Ensure image scales properly */
+    max-width: 100%;
     height: auto;
 }
 
@@ -161,22 +157,26 @@ body {
         align-items: flex-start;
         padding: 10px 5%;
     }
+
     .navbar {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
     .navbar a {
         margin: 10px 0;
         padding: 10px 0;
         text-align: center;
     }
+
     .social-icons {
         position: relative;
         bottom: auto;
         left: auto;
         margin-top: 20px;
     }
+
     .btn {
         position: relative;
         bottom: auto;
@@ -185,10 +185,19 @@ body {
         display: block;
         text-align: center;
     }
+
+    .home {
+        flex-direction: column; /* Change to column on smaller screens */
+        padding: 20px;
+        text-align: center;
+    }
+
     .home-content {
         padding: 20px;
     }
+
     .home-img {
         margin-top: 20px;
+        max-width: 100%;
     }
 }
